@@ -2,100 +2,11 @@
 <html lang="fa">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tablighbin WebApp</title>
-  <style>
-    body {
-      font-family: Tahoma, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f7f7f7;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      min-height: 100vh;
-    }
-
-    h2 {
-      margin-top: 30px;
-      color: #333;
-      text-align: center;
-    }
-
-    .ad-container {
-      width: 95%;
-      max-width: 600px;
-      margin: 20px auto;
-      padding: 10px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      background: #fff;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    button {
-      padding: 12px 24px;
-      font-size: 16px;
-      margin: 20px 0;
-      cursor: pointer;
-      border: none;
-      border-radius: 6px;
-      background-color: #1c7ed6;
-      color: #fff;
-      transition: background 0.3s;
-    }
-
-    button:hover {
-      background-color: #1971c2;
-    }
-
-    @media (max-width: 480px) {
-      .ad-container {
-        padding: 8px;
-      }
-
-      button {
-        width: 90%;
-      }
-    }
-  </style>
+  <title>tablighbin</title>
 </head>
 <body>
+  <h1>سلام، تبلیغات اینجاست 👇</h1>
 
-  <h2>خوش آمدید به Tablighbin</h2>
-
-  <div class="ad-container">
-    <!-- تبلیغ یکتانت -->
-    <script>
-        !function (t, e, n) {
-            t.yektanetAnalyticsObject = n, t[n] = t[n] || function () {
-                t[n].q.push(arguments)
-            }, t[n].q = t[n].q || [];
-            var a = new Date, r = a.getFullYear().toString() + "0" + a.getMonth() + "0" + a.getDate() + "0" + a.getHours(),
-                c = e.getElementsByTagName("script")[0], s = e.createElement("script");
-            s.id = "ua-script-6LZ2xAT4"; s.dataset.analyticsobject = n;
-            s.async = 1; s.type = "text/javascript";
-            s.src = "https://cdn.yektanet.com/rg_woebegone/scripts_v3/6LZ2xAT4/rg.complete.js?v=" + r, c.parentNode.insertBefore(s, c)
-        }(window, document, "yektanet");
-    </script>
-  </div>
-
-  <button id="collectPointsBtn">امتیاز بگیر</button>
-
-  <script>
-    // اتصال به WebApp تلگرام
-    const tg = window.Telegram.WebApp;
-
-    // ارسال دیتا به ربات هنگام کلیک روی دکمه
-    document.getElementById('collectPointsBtn').addEventListener('click', () => {
-      tg.sendData('user_clicked_ad');
-      alert('امتیاز شما ثبت شد!');
-    });
-
-    // باز کردن WebApp در حالت fullscreen
-    tg.expand();
-  </script>
-
+  <!-- کدی که مدیااد بهت میده رو اینجا می‌ذاری -->
 </body>
 </html>
